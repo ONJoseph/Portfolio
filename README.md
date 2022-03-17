@@ -2,6 +2,7 @@
 # Portfolio
 > First milestone in the process of creating my portfolio website:Build a personal portfolio site.
 > Understand how to parse a Figma design to create a UI.
+![screenshot](/images/mobile_preview_v.1.0.png)
 
 <br/>
 
