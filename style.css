@@ -245,6 +245,7 @@ p {
 }
 
 .works__cards {
+  display: grid;
   grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
   justify-content: center;
