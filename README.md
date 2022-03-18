@@ -2,11 +2,19 @@
 # Portfolio
 > First milestone in the process of creating my portfolio website:Build a personal portfolio site.
 > Understand how to parse a Figma design to create a UI.
-![screenshot](/images/mobile_preview_v.1.0.png)
-
+-![screenshot](/images/mobile_preview_v.1.0.png)
+-- ![screenshot](/images/mobile-preview-v2.png)
+- ![screenshot](/images/mobile-version-preview-v3.png)
 <br/>
 
-## Built With
+## :blue_book: Learning Objectives
+
+- Understand how to parse a Figma design to create a UI.
+- Flexbox to place elements in the page.
+- Build a personal portfolio site.
+- Use images and backgrounds to enhance the look of the website.
+
+## :hammer: Built With
 
 - Major languages
     - HTML
