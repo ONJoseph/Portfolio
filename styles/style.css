@@ -198,7 +198,7 @@ p {
   content: "";
   position: absolute;
   background-color: #fff;
-  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png");
+  background-image: url("https://github.com/ONJoseph/Portfolio/blob/add-setup-and-mobile-version-skeleton/images/shapes.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ p {
   content: "";
   position: absolute;
   background-color: #6070ff;
-  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg");
+  background-image: url("https://github.com/ONJoseph/Portfolio/blob/add-contact-form-section-portfolio/images/contact-form-shapes-mobile.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
