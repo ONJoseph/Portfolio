@@ -7,6 +7,24 @@
 - ![screenshot](/images/mobile-version-preview-v3.png)
 - ![screenshoot](/images/mobile-preview_v4.png)
 <br/>
+Things done so far in the project:
+
+#### 1. Build mobile skeleton
+
+* Parse a Figma design
+* Use Flexbox for positioning
+* Use images and backgrounds
+
+#### 2. Build mobile version
+
+* Use Grid alongside Flexbox for positioning
+* Add button hover and pressed effects
+
+#### 3. Build contact form
+
+* Pair program with a coding partner
+* Use HTML5 validation
+* Collect form data using Formspree
 
 ## :blue_book: Learning Objectives
 
@@ -25,8 +43,7 @@
 - Technologies used
     - Git 
     - GitHub
-    - VSCode
-    - PC
+    - Lighthouse, Webhint, Stylelint
 <br/>
 
 ## Getting Started
