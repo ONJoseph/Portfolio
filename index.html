@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/27e53b408d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Portfolio | Joseph Ogbole</title>
 </head>
 <body>
@@ -41,7 +41,7 @@
                 </ul>
               </div>
               <div class="navbar__hamb">
-                  <img src="/images/hamburguer.png" alt="hamburguer icon">
+                  <img src="./images/hamburguer.png" alt="hamburguer icon">
               </div>
             </nav>
         </header>
@@ -57,11 +57,11 @@
           <a href="#" class="head__link fz-16 fw-500 lh-24">LET'S CONNECT</a>
           <div class="head__icons">
               <ul class="head__icons__ul ul flex">
-                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="/images/twittericon.png" alt="twitter icon"></a></li>
-                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="/images/Linkedinicon.png" alt="linkedin icon"></a></li>
-                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="/images/M.png" alt="M icon"></a></li>
-                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="/images/githubicon.png" alt="github icon"></a></li>
-                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="/images/handicon.png" alt="hand icon"></a></li>
+                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="./images/twittericon.png" alt="twitter icon"></a></li>
+                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="./images/Linkedinicon.png" alt="linkedin icon"></a></li>
+                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="./images/M.png" alt="M icon"></a></li>
+                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="./images/githubicon.png" alt="github icon"></a></li>
+                  <li class="head__icons__li"><a href="#" class="head__icons__link link"><img src="./images/handicon.png" alt="hand icon"></a></li>
               </ul>
           </div>
         </section>
@@ -211,6 +211,33 @@
 			</li>
 		</ul>
 	  </section>
+	  <section class="contact">
+		<div class="contact__container">
+			<h2 class="contact__title fw-700 fz-40 lh-52">Contact me</h2>
+			<p class="contact__dsc fw-500 fz-20 lh-28">
+				If you have an application you are interested in developing,
+				a feature that you need built or a project that needs
+				coding. I’d love to help with it
+			</p>
+		  
+		  <form action="https://formspree.io/f/xqkwbzdb" method="post">
+			  <ul class="ul">
+				  <li>
+					  <input type="text" class="contact__name fw-500 fz-17 lh-20" name="contact_name" placeholder="Enter your name" required maxlength="30">
+				  </li>
+				  <li>
+					<input type="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email" name="contact_email" required>
+				</li>
+				<li>
+					<textarea class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Get In Touch" class="btn fw-500 fz-17 lh-24">
+				</li>
+			  </ul>
+		  </form>
+		</div>
+	</section>
     </div>
 </body>
 </html>
