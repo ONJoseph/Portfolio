@@ -465,7 +465,7 @@ p {
   }
 
   .head::before {
-    background-image: url(../images/desktop/headline-background.png);
+    background-image: url(../images/desktop/Header-bg@2x.png);
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
