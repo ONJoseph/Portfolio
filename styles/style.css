@@ -142,21 +142,6 @@ p {
   display: grid;
 }
 
-.btn {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
-}
-
-.btn:hover {
-  -webkit-animation-name: btn-hover;
-  animation-name: btn-hover;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
 .btn:focus {
   background: #2230d2;
   color: #fff;
