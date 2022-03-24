@@ -441,6 +441,12 @@ p {
     align-items: center;
   }
 
+  .navbar__menu__ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
   .navbar__menu__li {
     margin: 0 16px;
   }
