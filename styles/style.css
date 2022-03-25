@@ -592,7 +592,7 @@ p {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 968px) {
   .fz-40 {
     font-size: 48px;
   }
