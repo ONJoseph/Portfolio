@@ -542,8 +542,16 @@ p {
     flex-basis: 7.6rem;
   }
 
-  .about__tools {
+  .about__tools_ul {
     flex-basis: 25rem;
+    width: 600px;
+    list-style: none;
+  }
+
+  .about_bg-white_flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .contact::before {
@@ -555,6 +563,7 @@ p {
   .contact {
     padding: 6rem 8.875rem;
     background: #fff;
+    margin-top: 150px;
   }
 
   .contact__dsc {
@@ -625,6 +634,7 @@ p {
 
   .about__tools {
     flex-basis: 38rem;
+    width: 80%;
   }
 
   .contact::before {
