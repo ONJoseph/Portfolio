@@ -310,6 +310,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #fff;
 }
 
 .about__title {
@@ -524,10 +525,12 @@ p {
     -moz-column-gap: 37px;
     column-gap: 37px;
     border-top-right-radius: 8rem;
+    background-color: #fff;
   }
 
   .about__myself {
     flex-basis: 25rem;
+    background-color: #fff;
   }
 
   .about__lang__bottom {
@@ -540,18 +543,21 @@ p {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 7.6rem;
+    background-color: #fff;
   }
 
   .about__tools_ul {
     flex-basis: 25rem;
     width: 600px;
     list-style: none;
+    background-color: #fff;
   }
 
   .about_bg-white_flex {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-color: #fff;
   }
 
   .contact::before {
@@ -630,11 +636,13 @@ p {
 
   .about__myself {
     flex-basis: 37rem;
+    background-color: #fff;
   }
 
   .about__tools {
     flex-basis: 38rem;
     width: 80%;
+    background-color: #fff;
   }
 
   .contact::before {
