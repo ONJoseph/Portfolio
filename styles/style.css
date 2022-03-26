@@ -305,7 +305,7 @@ p {
 }
 
 .about {
-  padding: 7.125rem 1.5rem;
+  padding: 6.4rem 2.4rem;
   border-top-right-radius: 5rem;
   display: flex;
   flex-direction: column;
@@ -558,6 +558,7 @@ p {
     width: 100%;
     justify-content: space-around;
     background-color: #fff;
+    padding: 9.6rem 3.2rem;
   }
 
   .contact::before {
@@ -569,7 +570,6 @@ p {
   .contact {
     padding: 6rem 8.875rem;
     background: #fff;
-    margin-top: 150px;
   }
 
   .contact__dsc {
