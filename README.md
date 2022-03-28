@@ -53,8 +53,6 @@ Things done so far in the project:
  
 > To get a local copy up and running follow these simple example steps.
 
-<br/>
-
 ### Install
 
 > ***git clone https://github.com/ONJoseph/Portfolio.git***
@@ -63,7 +61,6 @@ Things done so far in the project:
 
 > **Just access the index.html file through the browser or access the webserver where it has been deployed through the browser**
 
-<br/>
 
 ## Authors
 
