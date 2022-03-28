@@ -20,11 +20,26 @@ Things done so far in the project:
 * Use Grid alongside Flexbox for positioning
 * Add button hover and pressed effects
 
-#### 3. Build contact form
+#### 3. Build contact form (pair programming)
 
 * Pair program with a coding partner
 * Use HTML5 validation
 * Collect form data using Formspree
+
+#### 4. Build desktop version
+
+* Use media query for desktop view
+* Use desktop-specific classes to show/hide elements depending on view
+* Display desktop sections fully in viewport height
+
+### 4.5 Add effects (pair programming)
+
+* Use CSS transitions
+* Use CSS animations
+
+### 5. Deploy
+
+* Use GitHub pages to deploy website
 
 ## :blue_book: Learning Objectives
 
@@ -45,6 +60,10 @@ Things done so far in the project:
     - GitHub
     - Lighthouse, Webhint, Stylelint
 <br/>
+
+## Live Demo
+
+[Live Demo Link](https://onjoseph.github.io/Portfolio/)
 
 ## Getting Started
 
