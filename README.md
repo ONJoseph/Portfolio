@@ -26,6 +26,31 @@ Things done so far in the project:
 * Use HTML5 validation
 * Collect form data using Formspree
 
+#### 4. Build desktop version
+
+* Use media query for desktop view
+* Use desktop-specific classes to show/hide elements depending on view
+* Display desktop sections fully in viewport height
+
+### 4.5 Add effects (pair programming)
+
+* Use CSS transitions
+* Use CSS animations
+
+### 5. Deploy
+
+* Use GitHub pages to deploy website
+
+## Built With
+
+- Major languages: HTML, CSS
+- Technologies used: Lighthouse, Webhint, Stylelint
+
+## Live Demo
+
+[Live Demo Link](https://onjoseph.github.io/Portfolio/)
+
+
 ## :blue_book: Learning Objectives
 
 - Understand how to parse a Figma design to create a UI.
