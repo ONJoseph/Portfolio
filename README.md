@@ -116,7 +116,7 @@ Feel free to check the issues page<!--[issues page](../../issues/)-->.
 
 ## Acknowledgments
 
--Special thanks to Microverse
+- Special thanks to Microverse
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
