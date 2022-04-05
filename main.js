@@ -31,4 +31,3 @@ menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
     menuLink.addEventListener('click', closeMenu);
 });
-
