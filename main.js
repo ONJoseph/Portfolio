@@ -20,3 +20,15 @@ function openMenu() {
     viewport.classList.add('blockover');
     refreshIcon();
 }
+
+function closeMenu() {
+    menu.classList.remove('active');
+    viewport.classList.remove('blockover');
+    refreshIcon();
+}
+
+menuIconMobile.addEventListener('click', openMenu);
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', closeMenu);
+});
+
