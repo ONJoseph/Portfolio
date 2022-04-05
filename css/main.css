@@ -1,3 +1,5 @@
+/* stylelint-disable indentation */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 *,
 ::before,
@@ -482,6 +484,9 @@ body {
 .about__icons__link img:hover {
     transform: scale(1.5);
 }
+
+
+/* stylelint-disable indentation */
 
 @keyframes rotate-logo {
     50% {
