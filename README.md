@@ -76,13 +76,12 @@ Things done so far in the project:
 > This project can be run either from a local copy of the files (in it's directory structure) or by accessing it through a WEB server if it is installed as content for one.
 
  
-> To get a local copy up and running follow these simple example steps.
+> To get a local copy up and running follow these simple steps:
 
-<br/>
+1. Go to the [repository page](https://github.com/ArthurGC/portfolio-microverse).
+2. Press the "Code" button and copy the link.
+3. Clone it using git command `git clone <link>`.
 
-### Install
-
-> ***git clone https://github.com/ONJoseph/Portfolio.git***
 
 ### Usage
 
