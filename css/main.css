@@ -1,3 +1,14 @@
+/* stylelint-disable max-empty-lines */
+
+
+/* stylelint-disable indentation */
+
+
+/* stylelint-disable-next-line CssSyntaxError */
+
+
+/* stylelint-disable rule-empty-line-before */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 *,
 ::before,
@@ -680,4 +691,5 @@ body {
         padding: 8.875rem;
         padding-bottom: 7.9rem;
     }
+    /* stylelint-disable-next-line no-missing-end-of-source-newline */
 }
