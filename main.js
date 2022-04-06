@@ -4,30 +4,30 @@ const viewport = document.querySelector('body');
 const menuLinks = document.querySelectorAll('.navbar__menu__link');
 
 function isActiveClassExisted(element) {
-    return element.classList.contains('active');
+  return element.classList.contains('active');
 }
 
 function refreshIcon() {
-    if (isActiveClassExisted(menu)) {
-        menuIconMobile.setAttribute('src', './images/hamburguer-close.png');
-    } else {
-        menuIconMobile.setAttribute('src', './images/hamburguer.png');
-    }
+  if (isActiveClassExisted(menu)) {
+    menuIconMobile.setAttribute('src', './images/hamburguer-close.png');
+  } else {
+    menuIconMobile.setAttribute('src', './images/hamburguer.png');
+  }
 }
 
 function openMenu() {
-    menu.classList.toggle('active');
-    viewport.classList.add('blockover');
-    refreshIcon();
+  menu.classList.toggle('active');
+  viewport.classList.add('blockover');
+  refreshIcon();
 }
 
 function closeMenu() {
-    menu.ClassList.remove('active');
-    viewport.classList.remove('blockover');
-    refreshIcon();
+  menu.ClassList.remove('active');
+  viewport.classList.remove('blockover');
+  refreshIcon();
 }
 
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener('click', closeMenu);
+  menuLink.addEventListener('click', closeMenu);
 });
