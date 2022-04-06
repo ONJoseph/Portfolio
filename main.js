@@ -9,9 +9,9 @@ function isActiveClassExisted(element) {
 
 function refreshIcon() {
     if (isActiveClassExisted(menu)) {
-        menuIconMobile.setAttribute('src', 'images/hamburguer-close.png');
+        menuIconMobile.setAttribute('src', './images/hamburguer-close.png');
     } else {
-        menuIconMobile.setAttribute('src', 'images/hamburguer.png');
+        menuIconMobile.setAttribute('src', './images/hamburguer.png');
     }
 }
 
