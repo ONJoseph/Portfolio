@@ -190,6 +190,7 @@ body {
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
+
 .navbar__hamb,
 .navbar__close {
   cursor: pointer;
@@ -485,8 +486,9 @@ body {
 
 @keyframes rotate-logo {
   50% {
-    transform: scale(1.5) rotate(360deg) translateX(-50%);
+    transform: scale(1.5) rotate(360deg) translateX(-50%); 
   }
+  
   to {
     transform: scale(1) rotate(720deg) translateX(0);
   }
@@ -507,6 +509,7 @@ body {
     padding: 8rem 2rem;
     z-index: 50;
   }
+  
   .navbar__menu__ul {
     flex-direction: column;
   }
@@ -540,14 +543,16 @@ body {
 }
 
 @media (min-width: 992px) {
+  
   .navbar {
     padding: 1.5rem 8rem;
   }
+  
   .navbar__menu {
     display: flex;
     align-items: center;
   }
-  
+
   .navbar__menu__li {
     margin: 0 16px;
   }
@@ -561,12 +566,10 @@ body {
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
-
   .head {
     padding: 10rem;
     padding-right: 15rem;
   }
-  
   .head__title span {
     width: 15ch;
   }
@@ -593,6 +596,7 @@ body {
   .works__card__img {
     width: 50%;
   }
+  
   .works__card:nth-child(1),
   .works__card:nth-child(3) {
     flex-direction: row;
