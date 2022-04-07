@@ -14,6 +14,11 @@ h3,
 p {
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .hero {
@@ -72,6 +77,10 @@ p {
   font-size: 32px;
 }
 
+.fz-20 {
+  font-size: 20px;
+}
+
 .fz-18 {
   font-size: 18px;
 }
@@ -112,6 +121,10 @@ p {
   line-height: 52px;
 }
 
+.lh-28 {
+  line-height: 28px;
+}
+
 .lh-24 {
   line-height: 24px;
 }
@@ -143,30 +156,19 @@ p {
 }
 
 .btn {
-  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
   transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
 }
 
 .btn:hover {
-  -webkit-animation-name: btn-hover;
   animation-name: btn-hover;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
 .btn:focus {
   background: #2230d2;
   color: #fff;
-}
-
-@-webkit-keyframes btn-hover {
-  100% {
-    box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
-    color: #fff;
-  }
 }
 
 @keyframes btn-hover {
@@ -180,18 +182,20 @@ p {
   padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar__link {
-  color: #6070ff;
+  color: #2230d2;
+  animation-name: rotate-logo;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 
-.navbar__menu {
-  display: none;
-}
-
-.navbar__hamb {
+.navbar__hamb,
+.navbar__close {
   cursor: pointer;
+  z-index: 100;
 }
 
 .head::before {
@@ -202,6 +206,8 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
+  border-bottom-left-radius: 5rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -214,13 +220,17 @@ p {
   align-items: flex-start;
   position: relative;
   padding: 6rem 1.5rem;
-  border-bottom-left-radius: 5rem;
   z-index: 10;
 }
 
 .head__title {
   color: #172b4d;
-  width: 12.65ch;
+  width: 10ch;
+}
+
+.head__title span {
+  display: block;
+  width: 10ch;
 }
 
 .head__dsc {
@@ -229,23 +239,17 @@ p {
 }
 
 .head__link {
-  color: #7f8cff;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
 .head__icons {
   margin: 0.5rem 0;
-}
-
-.head__icons__ul {
   align-items: center;
   justify-content: space-between;
   width: 11rem;
 }
 
 .works__cards {
-  display: grid;
   grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
   justify-content: center;
@@ -265,13 +269,8 @@ p {
   width: 100%;
 }
 
-.works__card__img img {
-  width: 100%;
-}
-
 .works__card__subtitle {
   align-items: center;
-  -moz-column-gap: 2rem;
   column-gap: 2rem;
   margin: 20px 0;
 }
@@ -286,13 +285,15 @@ p {
 }
 
 .works__card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 1rem 0 1.8rem;
 }
 
 .works__card__topics__text {
   padding: 4px 12px;
   border-radius: 8px;
-  margin-right: 8px;
 }
 
 .works__card__btn .btn {
@@ -305,12 +306,11 @@ p {
 }
 
 .about {
-  padding: 6.4rem 2.4rem;
+  padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
 }
 
 .about__title {
@@ -325,17 +325,14 @@ p {
   text-transform: uppercase;
 }
 
-.about__icons {
-  margin: 1.3rem 0 1rem;
-}
-
 .about__icons__ul {
+  margin: 1.3rem 0 1rem;
   align-items: center;
   justify-content: space-between;
   width: 11rem;
 }
 
-.about__btn .btn {
+.about .btn {
   width: 162px;
   height: 48px;
   padding: 12px;
@@ -368,11 +365,19 @@ p {
   padding: 9px 12px;
 }
 
+.about__frameworks {
+  border-bottom: 1px solid #dfe1e6;
+}
+
 .about__frameworks__top {
   align-items: center;
   justify-content: space-between;
   padding: 23px 40px 23px 0;
   cursor: pointer;
+}
+
+.about__skills {
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .about__skills__top {
@@ -389,6 +394,7 @@ p {
   background-image: url("../images/contact-form-shapes-mobile.png");
   background-size: contain;
   background-position: right;
+  background-origin: content-box;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
   top: 0;
@@ -428,6 +434,11 @@ p {
   padding: 0 1rem;
 }
 
+.contact__container form li label {
+  display: block;
+  color: #fff;
+}
+
 .contact__container form li textarea {
   width: 100%;
   border-radius: 8px;
@@ -444,7 +455,92 @@ p {
   padding: 12px;
   color: #6070ff;
   cursor: pointer;
-  margin: 18px;
+  margin: 18px 0;
+}
+
+.navbar__menu__link {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .navbar__menu__link:hover {
+    color: #396df2;
+    font-size: 17px;
+  }
+}
+
+.head__icons__link img {
+  transition: transform 0.5s;
+}
+
+.about__icons__link img {
+  transition: transform 0.5s;
+}
+
+.head__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+.about__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+@keyframes rotate-logo {
+  50% {
+    transform: scale(1.5) rotate(360deg) translateX(-50%);
+  }
+
+  to {
+    transform: scale(1) rotate(720deg) translateX(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar__menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(96, 112, 255, 0.95);
+    display: flex;
+    top: 0;
+    left: 100%;
+    transition: left 0.8s, visibility 0.8s, opacity 0.4s;
+    padding: 8rem 2rem;
+    z-index: 50;
+  }
+
+  .navbar__menu__ul {
+    flex-direction: column;
+  }
+
+  .navbar__menu__li {
+    margin-bottom: 40px;
+  }
+
+  .navbar__menu__li a {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #fff;
+    transition: color 1s;
+  }
+
+  .navbar__menu__li a:hover {
+    color: #000;
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  transition: left 0.8s, visibility 0.8s, opacity 0.4s;
+}
+
+.blockover {
+  overflow-y: hidden;
 }
 
 @media (min-width: 992px) {
@@ -457,12 +553,6 @@ p {
     align-items: center;
   }
 
-  .navbar__menu__ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-
   .navbar__menu__li {
     margin: 0 16px;
   }
@@ -472,7 +562,7 @@ p {
   }
 
   .head::before {
-    background-image: url(../images/desktop/Header-bg@2x.png);
+    background-image: url(../images/desktop/headline-background.png);
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
@@ -495,8 +585,8 @@ p {
   }
 
   .works__card {
+    align-items: center;
     max-width: 1104px;
-    -moz-column-gap: 46px;
     column-gap: 46px;
     padding: 1.5rem;
   }
@@ -505,8 +595,8 @@ p {
     padding: 1rem;
   }
 
-  .works__card > * {
-    flex-basis: 50%;
+  .works__card__img {
+    width: 50%;
   }
 
   .works__card:nth-child(1),
@@ -522,20 +612,16 @@ p {
   .about {
     padding: 6rem;
     flex-direction: row;
-    -moz-column-gap: 37px;
     column-gap: 37px;
     border-top-right-radius: 8rem;
-    background-color: #fff;
   }
 
   .about__myself {
     flex-basis: 25rem;
-    background-color: #fff;
   }
 
   .about__lang__bottom {
     display: flex;
-    -moz-column-gap: 12px;
     column-gap: 12px;
   }
 
@@ -543,26 +629,14 @@ p {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 7.6rem;
-    background-color: #fff;
   }
 
-  .about__tools_ul {
+  .about__tools {
     flex-basis: 25rem;
-    width: 600px;
-    list-style: none;
-    background-color: #fff;
-  }
-
-  .about_bg-white_flex {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    background-color: #fff;
-    padding: 9.6rem 3.2rem;
   }
 
   .contact::before {
-    background-image: url(../images/desktop/contact-form-background-shapes.png);
+    background-image: url(../images/desktop/contact-form-background-shape.png);
     padding: 1rem;
     border-top-left-radius: 8rem;
   }
@@ -592,7 +666,7 @@ p {
   }
 }
 
-@media (min-width: 968px) {
+@media (min-width: 1440px) {
   .fz-40 {
     font-size: 48px;
   }
@@ -636,13 +710,10 @@ p {
 
   .about__myself {
     flex-basis: 37rem;
-    background-color: #fff;
   }
 
   .about__tools {
     flex-basis: 38rem;
-    width: 80%;
-    background-color: #fff;
   }
 
   .contact::before {
@@ -654,3 +725,5 @@ p {
     padding-bottom: 7.9rem;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
