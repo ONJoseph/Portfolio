@@ -15,3 +15,9 @@ export const openMenu = () => {
   menu.classList.toggle('active');
   refreshIcon();
 };
+
+export const closeMenu = () => {
+  menu.classList.remove('active');
+  refreshIcon();
+};
+
