@@ -22,7 +22,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  menu.ClassList.remove('active');
+  menu.classList.remove('active');
   viewport.classList.remove('blockover');
   refreshIcon();
 }
