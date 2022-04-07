@@ -486,9 +486,9 @@ body {
 
 @keyframes rotate-logo {
   50% {
-    transform: scale(1.5) rotate(360deg) translateX(-50%); 
-  
+    transform: scale(1.5) rotate(360deg) translateX(-50%);
   }
+
   to {
     transform: scale(1) rotate(720deg) translateX(0);
   }
@@ -509,13 +509,15 @@ body {
     padding: 8rem 2rem;
     z-index: 50;
   }
+
   .navbar__menu__ul {
     flex-direction: column;
   }
+
   .navbar__menu__li {
     margin-bottom: 40px;
   }
-  
+
   .navbar__menu__li a {
     font-size: 32px;
     font-weight: 600;
@@ -523,7 +525,7 @@ body {
     color: #fff;
     transition: color 1s;
   }
-  
+
   .navbar__menu__li a:hover {
     color: #000;
   }
@@ -541,11 +543,10 @@ body {
 }
 
 @media (min-width: 992px) {
-  
   .navbar {
     padding: 1.5rem 8rem;
   }
-  
+
   .navbar__menu {
     display: flex;
     align-items: center;
@@ -554,7 +555,7 @@ body {
   .navbar__menu__li {
     margin: 0 16px;
   }
-  
+
   .navbar__hamb {
     display: none;
   }
@@ -564,14 +565,16 @@ body {
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
+
   .head {
     padding: 10rem;
     padding-right: 15rem;
   }
+
   .head__title span {
     width: 15ch;
   }
-  
+
   .head__link {
     margin: 0.7rem 0;
   }
@@ -579,26 +582,27 @@ body {
   .works__cards {
     padding: 5rem;
   }
-  
+
   .works__card {
     align-items: center;
     max-width: 1104px;
     column-gap: 46px;
     padding: 1.5rem;
   }
-  
+
   .works__card__text {
     padding: 1rem;
   }
-  
+
   .works__card__img {
     width: 50%;
   }
-  
+
   .works__card:nth-child(1),
   .works__card:nth-child(3) {
     flex-direction: row;
   }
+
   .works__card:nth-child(2),
   .works__card:nth-child(4) {
     flex-direction: row-reverse;
@@ -610,22 +614,22 @@ body {
     column-gap: 37px;
     border-top-right-radius: 8rem;
   }
-  
+
   .about__myself {
     flex-basis: 25rem;
   }
-  
+
   .about__lang__bottom {
     display: flex;
     column-gap: 12px;
   }
-  
+
   .about__lang__bottom li {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 7.6rem;
   }
-  
+
   .about__tools {
     flex-basis: 25rem;
   }
@@ -640,21 +644,22 @@ body {
     padding: 6rem 8.875rem;
     background: #fff;
   }
-  
+
   .contact__dsc {
     max-width: 570px;
   }
+
   .contact__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact__container form li input,
   .contact__container form li textarea {
     max-width: 447px;
   }
-  
+
   .contact__container form li:last-child {
     text-align: center;
   }
@@ -701,9 +706,11 @@ body {
   .about {
     padding: 7.125rem;
   }
+
   .about__myself {
     flex-basis: 37rem;
   }
+
   .about__tools {
     flex-basis: 38rem;
   }
@@ -719,3 +726,4 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
