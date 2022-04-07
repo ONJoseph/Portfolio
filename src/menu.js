@@ -20,4 +20,3 @@ export const closeMenu = () => {
   menu.classList.remove('active');
   refreshIcon();
 };
-
