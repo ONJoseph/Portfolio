@@ -1,3 +1,5 @@
+/* global createElement, addEventListeners, removeElement, validateInputs */
+
 const form = document.forms[0];
 const submitButton = form['user-submit'];
 let span = '';
@@ -7,9 +9,6 @@ const [...errorMessage] = [
   'Email should be lower case in format user@mail.com',
   'Please enter your message',
 ];
-const validateInputs = '',
-const createElement = '',
-const addEventListeners = '',
 
 // When user clicks Submit button, submit form if all form inputs are valid,
 // Else display custom error message
