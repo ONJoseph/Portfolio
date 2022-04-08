@@ -14,12 +14,17 @@ submitButton.addEventListener('click', (event) => {
     removeElement(form.querySelector('span'));
     event.preventDefault(); // Prevent default form validation messages
 
-    const invalidInput = validateInputs(formInputs);
-    if (invalidInput === -1) {
-        form.submit();
-    } else {
-        span = createElement('span', 'error', {}, errorMessage[invalidInput]);
-        document.querySelector('form div').append(span);
+const invalidInput = validateInputs(formInputs);
+if (invalidInput === -1) { form.submit();
+  }
+  else {
+      span = createElement('span', 'error', {}, errorMessage[invalidInput]);
+      document.querySelector('form div').append(span);
     }
+});
+
+//Remove error message when user clicks on any form input
+addEventListeners(formInputs, 'click', () => {
+  removeElement(form.querySelector('span'));
 });
 
