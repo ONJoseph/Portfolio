@@ -7,6 +7,9 @@ const [...errorMessage] = [
   'Email should be lower case in format user@mail.com',
   'Please enter your message',
 ];
+var validateInputs = '',
+var createElement = '',
+var addEventListeners = '',
 
 // When user clicks Submit button, submit form if all form inputs are valid,
 // Else display custom error message
@@ -15,13 +18,13 @@ submitButton.addEventListener('click', (event) => {
   event.preventDefault(); // Prevent default form validation messages
 
   const invalidInput = validateInputs(formInputs);
-    if (invalidInput === -1) 
-      { form.submit();
-      }
-    else {
-      span = createElement('span', 'error', {}, errorMessage[invalidInput]);
+  if (invalidInput === -1) 
+  { form.submit();
+   }
+   else {
+    span = createElement('span', 'error', {}, errorMessage[invalidInput]);
       document.querySelector('form div').append(span);
-    }
+  }
 });
 
 // Remove error message when user clicks on any form input
