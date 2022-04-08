@@ -329,25 +329,25 @@
                 </li>
             </ul>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact">
             <div class="contact__container">
                 <h2 class="contact__title fw-700 fz-40 lh-52">Contact me</h2>
                 <p class="contact__dsc fw-500 fz-20 lh-28">
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
                 </p>
-                <form action="https://formspree.io/f/xqkwbzdb" method="post">
+                <form id="contact" action="https://formspree.io/f/xqkwbzdb" method="post">
                     <ul class="ul">
                         <li>
-                            <label for="fname" class="fw-500 fz-17 lh-20">Name:</label>
-                            <input type="text" id="fname" class="contact__name fw-500 fz-17 lh-20" name="contact_name" placeholder="Enter your name" required maxlength="30" />
+                            <label for="name" class="fw-500 fz-17 lh-20">Name:</label>
+                            <input type="text" id="name" class="contact__name fw-500 fz-17 lh-20" name="user-name" placeholder="Enter your name" required maxlength="30" />
                         </li>
                         <li>
                             <label for="email" class="fw-500 fz-17 lh-20">Email:</label>
-                            <input type="email" id="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email" name="contact_email" required />
+                            <input type="email" id="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email" name="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
                         </li>
                         <li>
                             <label for="message" class="fw-500 fz-17 lh-20">Message:</label>
-                            <textarea id="message" class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
+                            <textarea id="message" class="fw-500 fz-17 lh-20" name="user-message" placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
                         </li>
                         <li>
                             <input type="submit" value="Get In Touch" class="btn fw-500 fz-17 lh-24" />
@@ -357,7 +357,10 @@
             </div>
         </section>
     </div>
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/menu.js"></script>
+    <script type="module" src="./src/popup.js"></script>
+    <script type="module" src="./src/validation.js"></script>
 </body>
 
 </html>
