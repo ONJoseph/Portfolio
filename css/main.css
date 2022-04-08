@@ -781,11 +781,7 @@ body {
   }
 }
 
-.modal {
-    width: 70%;
-  }
-
-  .modal .image-project {
+ .modal .image-project {
     margin-inline: auto;
     width: 70%;
   }
