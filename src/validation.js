@@ -18,10 +18,10 @@ submitButton.addEventListener('click', (event) => {
 
   const invalidInput = validateInputs(formInputs);
   if (invalidInput === -1) {
-    form.submit();}
+    form.submit(); }
   else {
     span = createElement('span', 'error', {}, errorMessage[invalidInput]);
-      document.querySelector('form div').append(span);
+    document.querySelector('form div').append(span);
   }
 });
 
