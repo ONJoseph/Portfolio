@@ -7,9 +7,9 @@ const [...errorMessage] = [
   'Email should be lower case in format user@mail.com',
   'Please enter your message',
 ];
-let validateInputs = '',
-let createElement = '',
-let addEventListeners = '',
+const validateInputs = '',
+const createElement = '',
+const addEventListeners = '',
 
 // When user clicks Submit button, submit form if all form inputs are valid,
 // Else display custom error message
