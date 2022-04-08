@@ -806,7 +806,6 @@ body {
   .modal__dsc__second {
     flex-basis: 40%;
   }
-}
 
 @media (min-width: 1440px) {
   .fz-40 {
