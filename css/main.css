@@ -533,6 +533,7 @@ body {
   visibility: visible;
   transform: scale(1);
   opacity: 1;
+  height: 90vh;
 }
 
 .overlay {
