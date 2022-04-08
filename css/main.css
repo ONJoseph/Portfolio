@@ -784,7 +784,7 @@ body {
 .modal .image-project {
   margin-inline: auto;
   width: 70%;
- }
+}
 
 @media (min-width: 1440px) {
   .fz-40 {
@@ -844,7 +844,7 @@ body {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
   }
- 
+
   .modal {
     width: 60%;
   }
