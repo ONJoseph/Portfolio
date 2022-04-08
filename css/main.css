@@ -781,27 +781,14 @@ body {
   }
 }
 
- .modal .image-project {
-    margin-inline: auto;
-    width: 70%;
-  }
+.modal .image-project {
+  margin-inline: auto;
+  width: 70%;
+ }
 
-  .modal__image {
-    width: 100%;
-  }
-
-  .modal__dsc {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .modal__dsc__first {
-    flex-basis: 60%;
-  }
-
-  .modal__dsc__second {
-    flex-basis: 40%;
-  }
+.modal__image {
+  width: 100%;
+ }
 
 @media (min-width: 1440px) {
   .fz-40 {
