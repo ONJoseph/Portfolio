@@ -786,10 +786,6 @@ body {
   width: 70%;
  }
 
-.modal__image {
-  width: 100%;
- }
-
 @media (min-width: 1440px) {
   .fz-40 {
     font-size: 48px;
@@ -848,7 +844,7 @@ body {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
   }
-  
+ 
   .modal {
     width: 60%;
   }
