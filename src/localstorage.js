@@ -24,19 +24,20 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
-// Preserve data
-import { "./localstorage.js" as foo }
-   from 'localStorage'; {
-    const setFormValues = () => {
-     const formData = {
-      name: form.contact_name.value,
-      email: form.contact_email.value,
-      message: form.contact_message.value,
-    };
-    
-        localStorage.setItem('formData', JSON.stringify(formData));
-  };
 
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+}
+else {
+  // Too bad, no localStorage for us
+}
+storageAvailable('sessionStorage');
+
+if(!localStorage.getItem('contact__name')) {
+  populateStorage();
+} else {
+  setStyles();
+}
   form.contact_name.addEventListener('change', setFormValues);
   form.contact_email.addEventListener('change', setFormValues);
   form.contact_message.addEventListener('change', setFormValues);
