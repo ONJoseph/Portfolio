@@ -1,5 +1,6 @@
-export const name = document.querySelector('.contact__name');
+/* global  addEventListeners */
 
+export const name = document.querySelector('.contact__name');
 export function storageAvailable(type) {
   let storage;
   try {
@@ -24,6 +25,7 @@ export function storageAvailable(type) {
   }
 }
 
+const form = document.forms[0];
 const formInputs = [form.name, form.email, form.message];
 
 // When user changes content in any form input, save data to local storage
