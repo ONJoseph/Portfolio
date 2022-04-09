@@ -1,4 +1,4 @@
-/* global fetchdata, formData, dataObject, name, email, message */
+/* global fetchdata, formData, dataObject, email, message */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -24,15 +24,58 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
-// saving to local storage
+// Preserve data
+import {
+  storageAvailable,
+} from './localstorage.js';
 
-localStorage.setItem('formData', JSON.stringify(dataObject));
+if (storageAvailable('localStorage')) {
 
-// retrieving data from local storage
+  const setFormValues = () => {
+    const formData = {
+      name: form.contact_name.value,
+      email: form.contact_email.value,
+      message: form.contact_message.value,
+    };
+    
+        localStorage.setItem('formData', JSON.stringify(formData));
+  };
 
-const fetchdata = JSON.parse(localStorage.getItem('formData'));
-if (fetchdata) {
-  name.value = fetchdata.gotYourName;
-  email.value = fetchdata.gotYourMail;
-  message.value = fetchdata.gotYourMessage;
+  form.contact_name.addEventListener('change', setFormValues);
+  form.contact_email.addEventListener('change', setFormValues);
+  form.contact_message.addEventListener('change', setFormValues);
+
+  let name = '';
+  let email = '';
+  let message = '';
+  
+    if (JSON.parse(localStorage.getItem('formData')) === null) {
+    name = '';
+    email = '';
+    message = '';
+  } else {
+    ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+  }
+  
+    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+    form.contact_name.value = name;
+    form.contact_email.value = email;
+    form.contact_message.value = message;
+  }
+  
+    // Reset form
+
+  const resetButton = document.querySelector('.btn--reset');
+
+  const resetForm = () => {
+    form.contact_name.value = '';
+    form.contact_email.value = '';
+    form.contact_message.value = '';
+    
+        localStorage.removeItem('formData');
+  };
+
+  resetButton.addEventListener('click', resetForm);
 }
+
+
