@@ -2,8 +2,7 @@
 
 contact.addEventListener("submit", (event) => {
     contact.submit();
-  }
-});
+  },);
 
 const theName = document.querySelector(".contact-name");
 const yourMessage = document.querySelector(".contact-message");
