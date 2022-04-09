@@ -25,8 +25,23 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
+contact.addEventListener("input", () => {
+  const dataObject = {
+    gotYourName: theName.value,
+    gotYourMail: mail.value,
+    gotYourMessage: yourMessage.value,
+  };
+
+  // saving to local storage
+
+  localStorage.setItem("formData", JSON.stringify(dataObject));
+});
+
+// retrieving data from local storage
+
+const fetchdata = JSON.parse(localStorage.getItem("formData"));
 if (fetchdata) {
   theName.value = fetchdata.gotYourName;
   mail.value = fetchdata.gotYourMail;
   yourMessage.value = fetchdata.gotYourMessage;
-/* global fetchdata, */
+  }
