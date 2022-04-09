@@ -1,4 +1,4 @@
-/* global createElement, fetchdata, addEventListeners, */
+/* global fetchdata, */
 
 export const name = document.querySelector('.contact__name');
 
