@@ -23,17 +23,14 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
+// When page loads, populate form inputs with data from local storage
+function populateForm() {
+  if (localStorage.length > 0) {
+    const formData = JSON.parse(localStorage.getItem('form'));
+    formInputs.forEach((formInput) => {
+      formInput.value = formData[formInput.id];
+    });
+  }
+}
 
-if (storageAvailable('localstorage')) {
-  // Yippee! We can use localStorage awesomeness
-}
-else {
-  // Too bad, no localStorage for us
-}
-storageAvailable('sessionStorage');
-
-if(!localStorage.getItem('contact__name')) {
-  populateStorage();
-} else {
-  contact__email();
-}
+window.addEventListener('load', populateForm);
