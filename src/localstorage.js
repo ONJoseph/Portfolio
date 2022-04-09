@@ -30,7 +30,7 @@ const formInputs = [form.name, form.email, form.message];
 
 // When user changes content in any form input, save data to local storage
 addEventListeners(formInputs, 'change', () => {
-  localstorage.setItem('form', JSON.stringify(
+  localStorage.setItem('form', JSON.stringify(
     {
       name: formInputs[0].value,
       email: formInputs[1].value,
@@ -41,8 +41,8 @@ addEventListeners(formInputs, 'change', () => {
 
 // When page loads, populate form inputs with data from local storage
 function populateForm() {
-  if (localstorage.length > 0) {
-    const formData = JSON.parse(localstorage.getItem('form'));
+  if (localStorage.length > 0) {
+    const formData = JSON.parse(localStorage.getItem('form'));
     formInputs.forEach((formInput) => {
       formInput.value = formData[formInput.id];
     });
