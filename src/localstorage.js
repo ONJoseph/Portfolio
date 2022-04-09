@@ -25,10 +25,11 @@ export function storageAvailable(type) {
   }
 }
 // Preserve data
-from './localstorage.js';
- if (storageAvailable('localStorage')) {
-   const setFormValues = () => {
-    const formData = {
+import {
+  from './localstorage.js';
+   if (storageAvailable('localStorage')) {
+    const setFormValues = () => {
+     const formData = {
       name: form.contact_name.value,
       email: form.contact_email.value,
       message: form.contact_message.value,
@@ -46,14 +47,13 @@ from './localstorage.js';
   let message = '';
   
     if (JSON.parse(localStorage.getItem('formData')) === null) {
-    name = '';
-    email = '';
-    message = '';
-  } else {
+     name = '';
+     email = '';
+     message = '';
+   } else {
     ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
-  }
-  
-    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+   }
+   if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
     form.contact_name.value = name;
     form.contact_email.value = email;
     form.contact_message.value = message;
@@ -73,5 +73,3 @@ from './localstorage.js';
 
   resetButton.addEventListener('click', resetForm);
 }
-
-
