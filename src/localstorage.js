@@ -1,4 +1,3 @@
-/* global setFormValues, form, message, populateStorage */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -38,5 +37,3 @@ if(!localStorage.getItem('contact__name')) {
 } else {
   contact__email();
 }
-
-resetButton.addEventListener('click', resetForm);
