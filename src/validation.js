@@ -1,9 +1,9 @@
-document.querySelector(‘#contact’).addEventListener(‘submit’, (e) => {
+document.querySelector('#contact').addEventListener('submit', (e) => {
   localStorage.clear()
     const userInfo = {
-      username: document.querySelector(‘#name’).value,
-      email: document.querySelector(‘#email’).value,
-      messge: document.querySelector(‘#message’).value,
+      username: document.querySelector('#name').value,
+      email: document.querySelector('#email').value,
+      messge: document.querySelector('#message').value,
     };
-    localStorage.setItem(‘userdata’, JSON.stringify(userInfo));
+    localStorage.setItem('userdata', JSON.stringify(userInfo));
 });
