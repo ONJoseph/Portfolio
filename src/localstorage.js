@@ -25,8 +25,6 @@ export function storageAvailable(type) {
   }
 }
 // Preserve data
-import {
-  storageAvailable,
 } from './localstorage.js';
 
 if (storageAvailable('localStorage')) {
