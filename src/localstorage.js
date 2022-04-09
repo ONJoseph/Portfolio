@@ -29,3 +29,4 @@ if (fetchdata) {
   theName.value = fetchdata.gotYourName;
   mail.value = fetchdata.gotYourMail;
   yourMessage.value = fetchdata.gotYourMessage;
+/* global fetchdata, */
