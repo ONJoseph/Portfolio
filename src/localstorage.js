@@ -1,4 +1,4 @@
-/* global fetchdata, formData */
+/* global fetchdata, formData, dataObject, name, email, message */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -24,15 +24,15 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
-  // saving to local storage
+// saving to local storage
 
-  localStorage.setItem("formData", JSON.stringify(dataObject));
+localStorage.setItem('formData', JSON.stringify(dataObject));
 
 // retrieving data from local storage
 
-const fetchdata = JSON.parse(localStorage.getItem("formData"));
+const fetchdata = JSON.parse(localStorage.getItem('formData'));
 if (fetchdata) {
-  theName.value = fetchdata.gotYourName;
-  mail.value = fetchdata.gotYourMail;
-  yourMessage.value = fetchdata.gotYourMessage;
-  }
+  name.value = fetchdata.gotYourName;
+  email.value = fetchdata.gotYourMail;
+  message.value = fetchdata.gotYourMessage;
+}
