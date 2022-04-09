@@ -25,8 +25,7 @@ export function storageAvailable(type) {
   }
 }
 // Preserve data
-import {
-  from ,'./localstorage.js';
+import { "./localstorage.js" as foo }
    if (storageAvailable('localStorage')) {
     const setFormValues = () => {
      const formData = {
