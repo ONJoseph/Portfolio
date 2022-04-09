@@ -48,5 +48,4 @@ function populateForm() {
     });
   }
 }
-
 window.addEventListener('load', populateForm);
