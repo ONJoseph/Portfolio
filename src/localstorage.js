@@ -33,7 +33,7 @@ if (fetchdata) {
   // saving to local storage
 
   localStorage.setItem("formData", JSON.stringify(dataObject));
-});
+);
 
 // retrieving data from local storage
 
