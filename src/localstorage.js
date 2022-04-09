@@ -1,3 +1,5 @@
+/* global createElement, fetchdata, addEventListeners, */
+
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
