@@ -67,4 +67,3 @@ if(!localStorage.getItem('contact__name')) {
   };
 
   resetButton.addEventListener('click', resetForm);
-}
