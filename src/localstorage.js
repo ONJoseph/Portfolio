@@ -38,31 +38,5 @@ if(!localStorage.getItem('contact__name')) {
 } else {
   contact__email();
 }
-  form.contact__name.addEventListener('change', setFormValues);
-  form.contact__email.addEventListener('change', setFormValues);
-  form.contact__message.addEventListener('change', setFormValues);
-  
-    if (JSON.parse(localStorage.getItem('email')) === null) {
-    name = '';
-    email = '';
-    message = '';
-  } else {
-   ({ name, email, message } = JSON.parse(localStorage.getItem('text')));
-  }
-   if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
-    form.contact_name.value = name;
-    form.contact_email.value = email;
-    form.contact_message.value = message;
-  }
-    // Reset form
-
-  const resetButton = document.querySelector('.btn--reset');
-
-  const resetForm = () => {
-  form.contact_name.value = '';
-  form.contact_email.value = '';
-  form.contact_message.value = '';  
-  localStorage.removeItem('text');
-};
 
 resetButton.addEventListener('click', resetForm);
