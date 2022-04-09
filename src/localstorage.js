@@ -1,4 +1,4 @@
-/* global fetchdata*/
+/* global fetchdata, formData */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -27,7 +27,6 @@ export function storageAvailable(type) {
   // saving to local storage
 
   localStorage.setItem("formData", JSON.stringify(dataObject));
-});
 
 // retrieving data from local storage
 
