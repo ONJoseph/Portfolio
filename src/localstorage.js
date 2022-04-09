@@ -23,6 +23,20 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
+
+const formInputs = [form.name, form.email, form.message];
+
+// When user changes content in any form input, save data to local storage
+addEventListeners(formInputs, 'change', () => {
+  localStorage.setItem('form', JSON.stringify(
+    {
+      name: formInputs[0].value,
+      email: formInputs[1].value,
+      message: formInputs[2].value,
+    },
+  ));
+});
+
 // When page loads, populate form inputs with data from local storage
 function populateForm() {
   if (localStorage.length > 0) {
