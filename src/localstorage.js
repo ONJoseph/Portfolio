@@ -25,7 +25,6 @@ export function storageAvailable(type) {
             && (storage && storage.length !== 0);
   }
 }
-
 if (fetchdata) {
   theName.value = fetchdata.gotYourName;
   mail.value = fetchdata.gotYourMail;
