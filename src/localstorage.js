@@ -26,7 +26,7 @@ export function storageAvailable(type) {
 }
 // Preserve data
 import { "./localstorage.js" as foo }
-   from (storageAvailable('localStorage')) {
+   from storageAvailable('localStorage') {
     const setFormValues = () => {
      const formData = {
       name: form.contact_name.value,
