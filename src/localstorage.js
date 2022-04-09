@@ -1,4 +1,4 @@
-/* global fetchdata, formData, dataObject, email, form, message */
+/* global setFormValues, form, message, populateStorage */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -25,7 +25,7 @@ export function storageAvailable(type) {
   }
 }
 
-if (storageAvailable('localStorage')) {
+if (storageAvailable('localstorage')) {
   // Yippee! We can use localStorage awesomeness
 }
 else {
@@ -36,18 +36,18 @@ storageAvailable('sessionStorage');
 if(!localStorage.getItem('contact__name')) {
   populateStorage();
 } else {
-  setStyles();
+  contact__email();
 }
-  form.contact_name.addEventListener('change', setFormValues);
-  form.contact_email.addEventListener('change', setFormValues);
-  form.contact_message.addEventListener('change', setFormValues);
+  form.contact__name.addEventListener('change', setFormValues);
+  form.contact__email.addEventListener('change', setFormValues);
+  form.contact__message.addEventListener('change', setFormValues);
   
-    if (JSON.parse(localStorage.getItem('formData')) === null) {
+    if (JSON.parse(localStorage.getItem('email')) === null) {
     name = '';
     email = '';
     message = '';
   } else {
-   ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+   ({ name, email, message } = JSON.parse(localStorage.getItem('text')));
   }
    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
     form.contact_name.value = name;
@@ -59,11 +59,10 @@ if(!localStorage.getItem('contact__name')) {
   const resetButton = document.querySelector('.btn--reset');
 
   const resetForm = () => {
-    form.contact_name.value = '';
-    form.contact_email.value = '';
-    form.contact_message.value = '';
-    
-  localStorage.removeItem('formData');
-  };
+  form.contact_name.value = '';
+  form.contact_email.value = '';
+  form.contact_message.value = '';  
+  localStorage.removeItem('text');
+};
 
-  resetButton.addEventListener('click', resetForm);
+resetButton.addEventListener('click', resetForm);
