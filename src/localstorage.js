@@ -41,10 +41,6 @@ if(!localStorage.getItem('contact__name')) {
   form.contact_name.addEventListener('change', setFormValues);
   form.contact_email.addEventListener('change', setFormValues);
   form.contact_message.addEventListener('change', setFormValues);
-
-  let name = '';
-  let email = '';
-  let message = '';
   
     if (JSON.parse(localStorage.getItem('formData')) === null) {
     name = '';
