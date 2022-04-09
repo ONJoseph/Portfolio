@@ -25,11 +25,9 @@ export function storageAvailable(type) {
   }
 }
 // Preserve data
-from; './localstorage.js';
-
-if (storageAvailable('localStorage')) {
-
-  const setFormValues = () => {
+from './localstorage.js';
+ if (storageAvailable('localStorage')) {
+   const setFormValues = () => {
     const formData = {
       name: form.contact_name.value,
       email: form.contact_email.value,
