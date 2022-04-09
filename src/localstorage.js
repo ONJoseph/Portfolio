@@ -1,4 +1,4 @@
-/* global fetchdata, formData, dataObject, email, message */
+/* global fetchdata, formData, dataObject, email, form, message */
 export const name = document.querySelector('.contact__name');
 
 export function storageAvailable(type) {
@@ -46,18 +46,17 @@ import { "./localstorage.js" as foo }
   let message = '';
   
     if (JSON.parse(localStorage.getItem('formData')) === null) {
-     name = '';
-     email = '';
-     message = '';
-   } else {
-    ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
-   }
+    name = '';
+    email = '';
+    message = '';
+  } else {
+   ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+  }
    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
     form.contact_name.value = name;
     form.contact_email.value = email;
     form.contact_message.value = message;
   }
-  
     // Reset form
 
   const resetButton = document.querySelector('.btn--reset');
@@ -67,7 +66,7 @@ import { "./localstorage.js" as foo }
     form.contact_email.value = '';
     form.contact_message.value = '';
     
-        localStorage.removeItem('formData');
+  localStorage.removeItem('formData');
   };
 
   resetButton.addEventListener('click', resetForm);
